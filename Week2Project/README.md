@@ -12,3 +12,5 @@
 - mut means mutable data type in Rust
 - `::` is to specify the namespace and access the standard library or crates in Rust.
 - Create is the fundamental unit of packaging and reuse.
+- `trim()` methods removes the white space from beginning to end
+- 
