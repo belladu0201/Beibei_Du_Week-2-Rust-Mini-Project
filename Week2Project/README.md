@@ -4,6 +4,11 @@
 - I referenced from here: https://www.rust-lang.org/zh-CN/learn/get-started
 - I also got help from Copilot and ChatGPT to teach me understand some of the syntax of the Rust Language. 
 
+- The Code looks like the following:
+
 ![Image of Screen Shot](https://github.com/belladu0201/Images_Beibei/blob/main/Screen%20Shot%202023-02-01%20at%2010.57.30%20PM.png)
 
-
+- Some syntax Knowledge
+- mut means mutable data type in Rust
+- `::` is to specify the namespace and access the standard library or crates in Rust.
+- Create is the fundamental unit of packaging and reuse.
