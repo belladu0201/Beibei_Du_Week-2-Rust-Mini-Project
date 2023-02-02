@@ -13,4 +13,7 @@
 - `::` is to specify the namespace and access the standard library or crates in Rust.
 - Create is the fundamental unit of packaging and reuse.
 - `trim()` methods removes the white space from beginning to end
-- 
+- In Rust, the &mut syntax is used to declare a mutable reference. A reference is a way of accessing a value stored in memory, without copying it. The &mut syntax is used to create a mutable reference to a value, which means that the value can be modified through the reference. This is useful when you need to pass a value to a function and modify it, without copying it or consuming it. (Reference from ChatGPT)
+
+## Future Goals
+1. Try to Solve Leetcode problems using Rust if possible ;)
