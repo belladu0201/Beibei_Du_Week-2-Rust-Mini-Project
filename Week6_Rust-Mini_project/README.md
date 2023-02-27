@@ -10,3 +10,6 @@ The main objective of this project is to build a robust and efficient algorithm 
 4. Output the similarity score to the user.
 
 However, I am doing a simpler version in Rust language to calculate the similarity score between two vectors.
+The formula is displayed below:
+
+![alt](https://github.com/belladu0201/Beibei_Du_Weekly-Rust-Mini-Project/blob/main/similarity_score_formula.png)
