@@ -13,3 +13,28 @@ However, I am doing a simpler version in Rust language to calculate the similari
 The formula is displayed below:
 
 ![alt](https://github.com/belladu0201/Beibei_Du_Weekly-Rust-Mini-Project/blob/main/similarity_score_formula.png)
+
+## How to use
+```
+fn main() {
+    let mut vector1 = HashMap::new();
+    vector1.insert("a".to_string(), 1.0);
+    vector1.insert("b".to_string(), 2.0);
+    vector1.insert("c".to_string(), 3.0);
+    vector1.insert("d".to_string(), 4.0);
+    vector1.insert("e".to_string(), 5.0);
+    let mut vector2 = HashMap::new();
+    vector2.insert("a".to_string(), 1.0);
+    vector2.insert("b".to_string(), 2.0);
+    vector2.insert("c".to_string(), 3.0);
+    vector2.insert("d".to_string(), 4.0);
+    vector2.insert("e".to_string(), 5.0);
+    // get the cosine similarity
+    let similarity = cosine_similarity(&vector1, &vector2);
+    println!("Cosine similarity: {}", similarity); // should be 1.0
+}
+```
+In the main function, define the two vectors and call the function `cosine_similarity()`. The case that I used here is create a two exactly same vectors and the expected output should be 1. The output that I got matches this result.
+
+
+<img width="759" alt="Screen Shot 2023-02-26 at 8 21 11 PM" src="https://user-images.githubusercontent.com/60382493/221450861-b72ca1be-a9c1-418e-94a9-7c19c51078aa.png">
