@@ -1,10 +1,11 @@
 use csv::ReaderBuilder;
-use ndarray::Array2;
-use ndarray_stats::QuantileExt;
+// use ndarray::Array2;
+// use ndarray_stats::QuantileExt;
 use std::error::Error;
 use std::fs::File;
-use std::io::{BufReader, BufWriter, Write};
-use std::path::Path;
+use std::io::{BufReader};
+//, BufWriter, Write};
+// use std::path::Path;
 
 fn main() -> Result<(), Box<dyn Error>> {
     // Read the cosine similarity scores from a CSV file
@@ -24,7 +25,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Find the indices of the top 3 items with the largest cosine similarity score
     let mut top_indices: Vec<usize> = Vec::new();
     let mut top_scores: Vec<f64> = Vec::new();
-    for _ in 0..3 {
+    for _ in 0..4 {
         let max_score = scores.iter().cloned().fold(f64::NAN, f64::max);
         let max_index = scores.iter().position(|&x| x == max_score).unwrap();
         top_indices.push(max_index);
@@ -34,7 +35,8 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     // Print the top 3 items with the largest cosine similarity score
     println!("Top 3 items with the largest cosine similarity score:");
-    for i in 0..3 {
+    println!("The original item is: {}", items[0]);
+    for i in 1..4 {
         println!("{}: {}", items[top_indices[i]], top_scores[i]);
     }
 
