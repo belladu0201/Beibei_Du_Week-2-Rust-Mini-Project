@@ -3,6 +3,10 @@
 
 This is a Rust program that calculates the number of days until a target date. It uses the `chrono` library to handle dates and times.
 
+# Motivation
+
+I created this application because I wanted to know how many days were left until the last day of our class, that is April 18, 2023. However, I realized that it could be used for many other countdown purposes, such as counting down to a birthday, a vacation, or a project deadline. Users can set the countdown to be any date, with a countdown in seconds, minutes, hours, days, weeks, months, or years. All things can be set manually depending on the needs.
+
 ## How to Run
 
 1. Install Rust by following the instructions at https://www.rust-lang.org/tools/install.
