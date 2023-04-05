@@ -14,3 +14,5 @@ $ git clone https://github.com/username/project.git
 
 ## Usage
 <img width="863" alt="Screen Shot 2023-04-05 at 4 33 16 AM" src="https://user-images.githubusercontent.com/60382493/230026745-38db0e4c-6d6a-4c3b-8def-c55eeb8adf1e.png">
+It will only respond to the encoded message!
+<img width="518" alt="Screen Shot 2023-04-05 at 4 36 10 AM" src="https://user-images.githubusercontent.com/60382493/230027426-66ea880f-429a-4912-8dde-f88e04edd0cd.png">
